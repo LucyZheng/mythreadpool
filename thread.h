@@ -55,7 +55,7 @@ private:
         // 构造函数
         ThreadWorker(ThreadPool *pool, const int id) : m_pool(pool), m_id(id){}
         // 重载()操作
-        void operator(){
+        void operator()(){
             function<void()> func; // 定义基础函数类func
             bool dequeued; // 是否正在取出队列中元素
             while (!m_pool->m_shutdown){

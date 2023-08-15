@@ -1,7 +1,7 @@
 // test.cpp
 #include <iostream>
 #include <random>
-#include "thread_pool.h"
+#include "thread.h"
 using namespace std;
 random_device rd; // 真实随机数产生器
 mt19937 mt(rd()); //生成计算随机数mt
